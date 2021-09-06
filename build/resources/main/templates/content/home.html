@@ -15,11 +15,15 @@
     <hr>
     <table border="1">
         <tr>
-            <th>TEXT</th>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
         </tr>
-        <th:block th:each="r1 : ${resultList}">
+        <th:block th:each="salary : ${salaryList}">
             <tr>
-                <td th:text="${r1}"></td>
+                <td th:text="${salary.id}"></td>
+                <td th:text="${salary.name}"></td>
+                <td th:text="${salary.email}"></td>
             </tr>
         </th:block>
     </table>
